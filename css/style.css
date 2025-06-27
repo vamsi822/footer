@@ -1,106 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cedarville+Cursive&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Indie+Flower&family=Merienda:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    line-height: 1.5px;
-    font-family: 'Poppins', sans-serif;
-}
-.container{
+
+.container {
     max-width: 1170px;
-    background-color: #1e1c2aed;
     margin: auto;
 }
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.footer{
-    background-color: #1e1c2a;
-    padding: 70px 0px;
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
 }
-.col{
+
+.footer-col {
     width: 25%;
     padding: 0 15px;
 }
 
-.col h4{
+.footer-col h4 {
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     font-weight: 500;
     position: relative;
-    background-color: rgb(29, 28, 28);
 }
-.col h4::before{
+
+.footer-col h4::before {
     content: '';
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #1e1c2a;
+    background-color: #e91e63;
     height: 2px;
     width: 50px;
 }
-.col ul li:not(:last-child){
-    margin-bottom: 16px;
-}
-.col ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    color: #bbb;
-    display: block;
-    transition: all 0.3 ease;
-    padding: 3px;
-}
-.col ul li a:hover{
-    transform: scale(1.2);
-    color: whitesmoke;
-    padding: 10px;
-    transition: .5s;
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
 }
 
-.col .Social a{
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #bbbbbb;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
     height: 40px;
     width: 40px;
     background-color: rgba(255, 255, 255, 0.2);
-    color: whitesmoke;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    border-radius: 50%;
-    transition: .5s;
     margin: 0 10px 10px 0;
-    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
 }
-.col .Social a:hover{
-    transform: scale(1.2);
-    color: rgb(181, 176, 176);
-    background: rgba(77, 77, 75, 0.868);
-    padding: 10px;
-    transition: .5s;
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
 }
-@media screen and (max-width: 770px) {
-    .col{
+
+/* Responsive design */
+@media (max-width: 767px) {
+    .footer-col {
         width: 50%;
         margin-bottom: 30px;
-
     }
-    
 }
-@media screen and (max-width: 570px) {
-    .col{
+
+@media (max-width: 574px) {
+    .footer-col {
         width: 100%;
-        
     }
-    
 }
